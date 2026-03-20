@@ -1,33 +1,68 @@
-body {
-    padding-top: 6rem;
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+3D&display=swap');
+
+:root {
+    --background-color: #E63462;
+    --text-color: #483D3F;
+    --highlight-color-one: #708B75;
+    --highlight-color-two: #EF6351;
+    --highlight-color-three: #EDDDD4;
 }
 
-h1 {
-    font-size: 2.5rem;
+body{
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
-div.row {
-    background: var(--bs-primary-bg-subtle);
-    margin-bottom: 1em;
+/* Hero Section */
+.hero-section {
+    background: url(https://unsplash.com/s/photos/skyline);
+    background-size: cover;
+    background-position: 50% 50%;
+    background: var(--highlight-color-one);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
 }
 
-h3 {
-    margin-top: 25vh;
+.bg-light {
+    background-color: red;
 }
 
-div.row div {
-    padding: 5px;
-    border: 1px solid var(--bs-tertiary-color);
+.hero-section h1 {
+    font-weight: 700;
+    font-family: "Rubik Burned", system-ui;
 }
 
-p {
-    font-size: 1.25rem;
+h2, h3, h4, h5 {
+    font-family: "Rubik Burned", system-ui;
 }
 
-ul {
-    font-size: 1.25rem;
+.hero-section .lead {
+    font-size: 1.5rem;
 }
 
-ul li {
-    margin-bottom: 1rem;
+.work-card img {
+    height: 300px;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+.work-card {
+    font-family: "Rock 3D", system-ui;
+    border-radius: 0px;
+    border: none;
+}
+
+.btn {
+    background-color: var(--highlight-color-two);
+    border: none;
+}
+
+
+h2 {
+    font-weight: 700;
+    color: var(--text-color);
 }
