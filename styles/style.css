@@ -65,3 +65,7 @@ h2 {
     font-weight: 700;
     color: var(--text-color);
 }
+
+.modal-body img {
+    width: 100%;
+}
