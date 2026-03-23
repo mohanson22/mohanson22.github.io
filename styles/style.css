@@ -16,10 +16,9 @@ body{
 
 /* Hero Section */
 .hero-section {
-    background: url(https://unsplash.com/s/photos/skyline);
+    background: url('../images/catkeyboard.webp');
     background-size: cover;
     background-position: 50% 50%;
-    background: var(--highlight-color-one);
     height: 100vh;
     display: flex;
     align-items: center;
