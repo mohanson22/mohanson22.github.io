@@ -9,8 +9,40 @@
     --highlight-color-three: #EDDDD4;
 }
 
-body{
+body {
     background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.carousel-inner img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.btn {
+    background: var(--text-color);
+    border: none;
+    color: var(--green-hightlight);
+    font-family: "Roboto";
+    font-weight: 900;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 112px;
+}
+
+div.card {
+    border: none;
+    background-color: transparent;
+}
+
+div.card {
+    border: none;
+    background-color: transparent;
+}
+
+div.card-body, .card-title, .card-text {
     color: var(--text-color);
 }
 
