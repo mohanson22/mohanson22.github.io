@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Morgan Hanson</title>
+
+<style>
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Georgia", serif;
+}
+
+/* HERO SECTION */
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url('../images/image.png') center/cover no-repeat;
+}
+
+/* LEFT DARK OVERLAY */
+.hero::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60%;
+    height: 100%;
+    background: rgba(0,0,0,0.35);
+}
+
+/* RIGHT STRIPED OVERLAY */
+.hero::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        to right,
+        rgba(30, 50, 80, 0.6),
+        rgba(30, 50, 80, 0.6) 10px,
+        rgba(30, 50, 80, 0.3) 10px,
+        rgba(30, 50, 80, 0.3) 20px
+    );
+}
+
+/* NAME TEXT */
+.name {
+    position: absolute;
+    color: white;
+    z-index: 2;
+}
+
+.first {
+    top: 35%;
+    left: 10%;
+    font-size: 90px;
+}
+
+.last {
+    top: 50%;
+    right: 10%;
+    font-size: 80px;
+    font-style: italic;
+}
+
+/* INITIALS */
+.initials {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    letter-spacing: 5px;
+    z-index: 2;
+}
+
+/* NAV BUTTONS */
+.nav {
+    position: absolute;
+    bottom: 80px;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+}
+
+.nav a {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 30px;
+    background: #9c5a6b;
+    color: white;
+    text-decoration: none;
+    border: 2px solid #e6c5cc;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.nav a:hover {
+    background: #7e4554;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+
+    <div class="initials">MH</div>
+
+    <div class="name first">morgan</div>
+    <div class="name last">hanson</div>
+
+    <div class="nav">
+        <a href="#">HOME</a>
+        <a href="#">ABOUT ME</a>
+        <a href="#">WRITING</a>
+        <a href="#">DESIGN</a>
+        <a href="#">RESUME</a>
+    </div>
+
+</div>
+
+</body>
+</html>
