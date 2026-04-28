@@ -2,8 +2,158 @@
 @import url('https://fonts.googleapis.com/css2?family=Rock+3D&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Chango&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap');
 
-:root {
+/* RESET */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Bowlby One", sans-serif;
+}
+
+/* HERO BACKGROUND */
+.hero {
+  position: relative;
+    height: 100vh;
+    background: url('../images/image.png') center/cover no-repeat;
+}
+
+/* DARK LEFT SIDE */
+.hero::before {
+    content: "";
+    position: absolute;
+    left: 10;
+    top: 0;
+    width: 55%;
+    height: 100%;
+    background: rgba(0,0,0,0.35);
+}
+
+/* STRIPED RIGHT SIDE */
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 100%;
+
+    background:
+    /* STRIPES (top layer) */
+        repeating-linear-gradient(
+            to right,
+            rgba(255, 255, 255, 0.15),
+            rgba(255, 255, 255, 0.15) 18px,
+            rgba(255, 255, 255, 0.05) 18px,
+            rgba(255, 255, 255, 0.05) 36px
+        ),
+
+        /* DARK BLUE BASE (underneath) */
+        rgba(20, 40, 70, 0.6);
+}
+
+/* TEXT */
+.name {
+    position: absolute;
+    color: white;
+    z-index: 2;
+    font-family: "chango", sans-serif;
+}
+
+.first {
+    top: 35%;
+    left: 9%;
+    font-size: 100px;
+}
+
+.last {
+    top: 50%;
+    right: 9%;
+    font-size: 100px;
+}
+
+.initials {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    letter-spacing: 5px;
+    z-index: 2;
+    font-size: 20px;
+}
+
+/* NAV BUTTONS */
+.nav {
+    position: absolute;
+    bottom: 80px;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+}
+
+.nav a {
+    display: inline-block;
+    margin: 25px;
+    padding: 12px 30px;
+    background: #9c5a6b;
+    color: white;
+    text-decoration: none;
+    border: 2px solid #e6c5cc;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.nav a:hover {
+    background: #7e4554;
+}
+
+.footer {
+    background: linear-gradient(
+        to right,
+         rgba(20, 40, 70, 0.6)
+    ); 
+    color: white;
+    padding: 60px 80px;
+    font-family: 'Playfair Display', serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* LEFT SIDE */
+.footer-left h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.footer-columns {
+    display: flex;
+    gap: 80px;
+}
+
+.footer-columns h4 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.footer-columns p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* RIGHT SIDE */
+.footer-right h1 {
+    font-size: 80px;
+    font-weight: 500;
+}
+
+/* :root {
     --background-color: #E63462;
     --text-color: #483D3F;
     --highlight-color-one: #708B75;
@@ -49,7 +199,7 @@ div.card-body, .card-title, .card-text {
 }
 
 /* Hero Section */
-.hero-section {
+/* .hero-section {
     background: url('../images/image.png');
     background-size: cover;
     background-position: 50% 50%;
@@ -102,4 +252,4 @@ h2 {
 
 .modal-body img {
     width: 100%;
-}
+} */ 
