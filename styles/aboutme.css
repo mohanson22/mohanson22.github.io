@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+3D&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chango&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ABOUT PAGE HERO */
+.about-hero {
+    position: relative;
+    height: 100vh;
+    background: url('../images/IMG_0392.JPG') center/cover no-repeat;
+}
+
+/* SOFT OVERLAY (faded look) */
+.about-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(109, 117, 154, 0.35); 
+}
+
+/* INITIALS */
+.about-hero .initials {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    letter-spacing: 5px;
+    z-index: 2;
+    font-family: 'montserrat', sans-serif;
+}
+
+/* QUOTE TEXT */
+.quote {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 48px;
+    text-align: center;
+    width: 80%;
+    line-height: 1.4;
+
+    z-index: 2;
+}
+
+/* NAVIGATION */
+.about-hero .nav {
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+}
+
+/* NAV BUTTONS */
+.nav {
+    position: absolute;
+    bottom: 80px;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+}
+
+.nav a {
+    display: inline-block;
+    margin: 25px;
+    padding: 12px 30px;
+    background: #9c5a6b;
+    color: white;
+    text-decoration: none;
+    border: 2px solid #e6c5cc;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.nav a:hover {
+    background: #7e4554;
+}

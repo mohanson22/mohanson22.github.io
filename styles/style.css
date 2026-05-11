@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rock+3D&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Chango&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chonburi&display=swap'); 
 
 /* RESET */
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family: "Bowlby One", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 /* HERO BACKGROUND */
@@ -116,7 +116,7 @@ body, html {
     ); 
     color: white;
     padding: 60px 80px;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .footer-container {
@@ -130,6 +130,7 @@ body, html {
     font-size: 36px;
     margin-bottom: 30px;
     letter-spacing: 1px;
+    color: #f4f0ec;
 }
 
 .footer-columns {
@@ -152,6 +153,101 @@ body, html {
     font-size: 80px;
     font-weight: 500;
 }
+
+/* ABOUT ME SECTION */
+
+/* PAGE LAYOUT */
+.about-section {
+    display: flex;
+    height: 95vh;
+    font-family: 'Chonburi', serif;
+}
+
+/* LEFT SIDE */
+.about-left {
+    width: 60%;
+    background: #f4f0ec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* BORDER BOX */
+.about-box {
+    border: 1px solid rgba(0,0,0,0.2);
+    padding: 80px;
+    width: 70%;
+}
+
+/* SCRIPT TEXT */
+.handwritten {
+    font-family: 'Dancing Script', cursive;
+    color: #a05c70;
+    font-size: 32px;
+    margin-bottom: 20px;
+    transform: rotate(-5deg);
+}
+
+/* MAIN TITLE */
+.about-box h1 {
+    font-size: 64px;
+    color: #3e3533;
+    margin-bottom: 30px;
+    line-height: 1.1;
+}
+
+/* DESCRIPTION */
+.description {
+    font-size: 18px;
+    color: #5a4f4d;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* RIGHT SIDE */
+.about-right {
+    width: 35%;
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 49%;
+    height: 100%;
+
+    background:
+        repeating-linear-gradient(
+            to right,
+            rgba(60, 80, 110, 0.4),
+            rgba(60, 80, 110, 0.4) 20px,
+            rgba(60, 80, 110, 0.15) 20px,
+            rgba(60, 80, 110, 0.15) 40px
+        ),
+        rgba(40, 60, 90, 0.5);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* IMAGE */
+.about-right img {
+    width: 70%;
+    max-width: 350px;
+    border-radius: 4px;
+    z-index: 2;
+}
+
+.parallax { 
+    background: url('../images/stripes.jpg') right/cover no-repeat fixed;
+    height: 500px;
+    background-attachment: fixed;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
 
 /* :root {
     --background-color: #E63462;
