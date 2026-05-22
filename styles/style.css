@@ -360,18 +360,6 @@ body {
     text-decoration: underline;
 }
 
-/* MOBILE */
-@media (max-width: 768px) {
-
-    .page-title {
-        font-size: 55px;
-    }
-
-    .project-card {
-        width: 100%;
-    }
-
-}
 
 /* BUTTON */
 .project-card a {
@@ -388,4 +376,122 @@ body {
 .project-card a:hover {
     background: #8a4d5f;
     transform: translateY(-2px);
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+
+    .hero {
+        height: 100vh;
+        background-position: center;
+    }
+
+    .initials {
+        font-size: 28px;
+        top: 25px;
+        left: 25px;
+    }
+
+    .name {
+        font-size: 55px;
+        text-align: center;
+        width: 100%;
+        left: 0;
+    }
+
+    .first {
+        top: 90px;
+    }
+
+    .last {
+        top: 150px;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 18px;
+        top: 250px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+    }
+
+    .nav a {
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+        padding: 18px 0;
+    }
+
+    .about-section {
+        flex-direction: column;
+        margin-bottom: 60px;
+    }
+
+    .section-title {
+        font-size: 42px;
+        margin-top: 40px;
+    }
+
+    .about-left {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .about-box {
+        padding: 35px 25px;
+    }
+
+    .handwritten {
+        font-size: 28px;
+    }
+
+    .about-box h1 {
+        font-size: 48px;
+        line-height: 1;
+    }
+
+    .description {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .about-right {
+        width: 100%;
+        padding: 40px 20px;
+    }
+
+    .about-right img {
+        width: 85%;
+    }
+
+    .page-title {
+        font-size: 55px;
+        margin: 50px 0;
+    }
+
+    .projects-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .project-card {
+        width: 85%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .footer-columns {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .footer-right h1 {
+        font-size: 60px;
+    }
 }
