@@ -14,10 +14,34 @@ body, html {
 
 /* HERO BACKGROUND */
 .hero {
-  position: relative;
+    position: relative;
+    /* overflow: hidden; */
+    background-image: url('../images/grad.JPG');
     height: 100vh;
-    background: url('../images/image.png') center/cover no-repeat;
+    background-size: cover;
+    /* background: url('../images/image.png') center/cover no-repeat; */
 }
+
+/* .vortex {
+    position: absolute;
+    top: -20%;
+    right: -10%;
+    width: 900px;
+    height: 900px;
+
+    background:
+        radial-gradient (
+            circle at center, 
+            rgba(255, 255, 255, 0.12) 0px, 
+            rgba(255, 255, 255, 0.12) 6px,
+            transparent 6px,
+            transparent 24px
+            );
+
+            transform: rotate(25deg);
+            opacity: 0.7;
+            filter: blur(1px);
+} */
 
 /* DARK LEFT SIDE */
 .hero::before {
@@ -107,6 +131,9 @@ body, html {
 
 .nav a:hover {
     background: #7e4554;
+    hover {
+        background: #742d40;
+    }
 }
 
 .footer {
@@ -237,14 +264,14 @@ body, html {
     z-index: 2;
 }
 
-.parallax { 
+/* .parallax { 
     background: url('../images/stripes.jpg') right/cover no-repeat fixed;
     height: 500px;
     background-attachment: fixed;
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 
 
 
